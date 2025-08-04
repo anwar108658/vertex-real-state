@@ -1,29 +1,8 @@
 @import "tailwindcss";
 
-
-
 .bg-custom-hero {
   background-image: linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 132, 150, 0.568)) ,url(https://coralhomes.com.au/wp-content/uploads/Grange-258Q-Harmony-Lodge-Facade-2-1190x680.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.ant-segmented-item {
-  background: #fff; /* Custom background for unselected items */
-  color: #000;
-}
-.ant-segmented-item:hover {
-    background-color: #037396e8; /* Custom hover background for unselected items */
-    color: #fff !important; /* Custom text color for unselected items */
-    transition: all 0.4s ease-in; /* Smooth transition for hover effect */
-}
-
-.ant-segmented-item-selected {
-    background-color: #18b6ff34 !important;
-    color: #037396e8 !important; /* Custom text color for unselected items */
-}
-.ant-segmented-item-selected:hover {
-    background-color: #18b6ff34 !important;
-    color: #037396e8 !important; /* Custom text color for unselected items */
 }
