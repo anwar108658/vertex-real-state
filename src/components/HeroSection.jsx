@@ -13,7 +13,7 @@ const HeroSection = () => {
     className={`bg-custom-hero flex justify-center items-center  flex-1 rounded-lg`}>
       <div className='max-w-[800px] w-full flex flex-col items-center justify-center gap-6'>
 
-        <div className='text-white'>
+        <div className='text-white backdrop-blur-sm '>
             <h1 className='text-4xl font-bold'>Real homes live here</h1>
             <h2 className='text-xl font-semibold'>Real Prices. Real Photos. Real Properties.</h2>
         </div>
