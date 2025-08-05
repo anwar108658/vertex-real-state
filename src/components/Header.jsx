@@ -26,7 +26,7 @@ const Header = () => {
     <div className='flex justify-between items-center p-4'>
         <div className='flex items-center'>
             <img src={logo} className='w-15' alt="Logo" />
-            <span className='text-2xl font-bold ml-2 text-transparent  bg-clip-text bg-gradient-to-r from-[#576B78] to-[#05bef7]'>Real Estate</span>
+            <span className='text-2xl font-bold ml-2 text-gradient'>Real Estate</span>
         </div>
         <nav>
             <ul className='flex space-x-4 cursor-pointer text-gray-600'>
