@@ -5,8 +5,19 @@ import Carousel from './components/CustomCarousel'
 import { Avatar, Tooltip } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faArrowRightArrowLeft, faCirclePlay, faUser } from '@fortawesome/free-solid-svg-icons'
+import car from "./assets/card/car.svg"
+import map from "./assets/card/map.svg"
+import Building from "./assets/card/building.svg"
+import Segment from './components/Segment'
+import {cardCarousel} from "./components/Data"
 
 const App = () => {
+  const CityNames = [{key:"dubai",value:"Dubai"},{key:"abudhabi",value:"Abu Dhabi"},{key:"sharjah",value:"Sharjah"},{key:"ajman",value:"Ajman"},{key:"rasalkhaimah",value:"Ras Al Khaimah"},{key:"ummalquwain",value:"Umm Al Quwain"}]
+  const cards = [
+    {heading:"TruEstimate™",paragraph:"Find out how much your property is worth>",img:Building},
+    {heading:"TruBuilding™",paragraph:"Find homes by drive time>",img:car},
+    {heading:"Map View",paragraph:"Search for properties in preferred areas using a map>",img:map},
+  ]
   return (
     <div>
       <div className='h-screen flex flex-col px-4'>
@@ -35,9 +46,23 @@ const App = () => {
               <FontAwesomeIcon icon={faAngleRight} />
             </button>
           </div>
+            <div className='grid grid-cols-3 gap-4 pb-10 border-b-1 border-gray-300'>
+              {cards.map((card, index) => (
+                <div key={index} style={{ backgroundImage: `url(${card.img})`, backgroundSize: "70% 100%" }} className={`h-[300px] bg-right bg-no-repeat bg-blue-100 p-5 rounded-lg shadow-lg flex flex-col  gap-3 `}>
+                  <h3 className='text-2xl font-semibold text-gray-800'>{card.heading}</h3>
+                  <p className='max-w-[200px] text-[1.1rem]'>{card.paragraph}</p>
+                </div>
+              ))}
+            </div>
+        </section>
+        <section className=''>
+          <div className='flex flex-col gap-8 my-10 items-center'>
+            <h1 className='text-3xl font-semibold'>Browse New Projects in the UAE</h1>
+            <Segment options={CityNames} size="large"/>
+          </div>
+          <Carousel items={cardCarousel} />
         </section>
       </main>
-        <Carousel/>
     </div>
   )
 }

@@ -11,9 +11,38 @@
   background-image: linear-gradient(190deg, #63717B,rgb(7, 134, 107),#4B92B3,#0c4fb4, #044e70);
 }
 
+/* Text Gradient */
+
 .text-gradient {
   background: linear-gradient(to right, #576B78, #05bef7);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* Slick Carousel */
+
+.slick-arrow {
+  background-color: #03649c !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all .3s linear !important;
+}
+.slick-arrow:hover {
+  background:  #03649c !important;
+  scale: 1.1 !important;
+}
+.slick-arrow::after {
+    position: static !important;
+}
+
+.slick-track{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'antd'
 
-const CustomCarousel = () => {
+const CustomCarousel = ({items}) => {
   const contentStyle = {
   margin: 0,
   height: '160px',
@@ -41,11 +41,11 @@ const CustomCarousel = () => {
         },
       ]}
     >
-      {[1, 2, 3, 4, 5, 6].map((num) => (
-        <div key={num}>
-          <div style={{ padding: '0 8px' }}>
-            <h3 style={contentStyle}>{num}</h3>
-          </div>
+      {items.map((item) => (
+        <div key={item.id}>
+          <img src={item.img} alt="" />
+          <h3></h3>
+          <span>{item.type}</span>
         </div>
       ))}
     </Carousel>
