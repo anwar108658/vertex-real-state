@@ -1,5 +1,7 @@
 import React from 'react'
 import { Carousel } from 'antd'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationArrow, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const CustomCarousel = ({items}) => {
   const contentStyle = {
@@ -17,7 +19,7 @@ const CustomCarousel = ({items}) => {
       slidesToShow={3} 
       centerMode
       cssEase='linear' // Smooth transition
-      className=' bg-blue-400'
+      className=' bg-[#f1f8f7]'
       centerPadding='260px' // Padding for center mode
       touchMove={true} // Enable touch move
       swipeToSlide={true} // Enable swipe to slide
@@ -45,7 +47,15 @@ const CustomCarousel = ({items}) => {
         <div key={item.id}>
           <img src={item.img} alt="" />
           <h3></h3>
-          <span>{item.type}</span>
+          <p>{item.type}</p>
+          <div>
+            <FontAwesomeIcon icon={faLocationDot} />
+            <span>{item.location}</span>
+          </div>
+          <div className='flex items-center gap-2'>
+            <div className='flex-1 text-center'><p>LaunchPrice</p><p>{item.launchPrice}</p></div>
+            <div className='flex-1 text-center'><p>Handover</p><p>{item.Handover}</p></div>
+          </div>
         </div>
       ))}
     </Carousel>
