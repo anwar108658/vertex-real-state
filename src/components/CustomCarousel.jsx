@@ -42,7 +42,7 @@ const CustomCarousel = ({items}) => {
     >
       {items.map((item) => (
         <div key={item.id} className='!flex !flex-col gap-2 p-2  shadow-xl rounded-lg'>
-          <img src={item.img} className='w-full aspect-[1.5] rounded-lg'/>
+          <img src={item.img} className='w-full aspect-[1.5] brightness-70 rounded-lg'/>
           <h3 className='font-semibold text-[1.1rem]'>{item.BuildingName}</h3>
           <p>{item.type}</p>
           <div>

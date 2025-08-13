@@ -1,7 +1,7 @@
 export const cardCarousel = [
     {
         id: 1,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg",
         city: "dubai",
         BuildingName: "TruEstimate™",
         type:"Apartment",
@@ -11,7 +11,7 @@ export const cardCarousel = [
     },
     {
         id: 2,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ljff2QGyXvPEGtZPIDH-Gd_BPDMj1crsxA&s",
         city: "dubai",
         BuildingName: "TruBuilding™",
         type:"Condo",
@@ -21,7 +21,7 @@ export const cardCarousel = [
     },
     {
         id: 3,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://i.pinimg.com/736x/e7/d7/45/e7d745cda4e178e5dcb9bf751eb39bbd.jpg",
         city: "dubai",
         BuildingName: "Map View",
         type:"Townhouse",
@@ -31,7 +31,7 @@ export const cardCarousel = [
     },
     {
         id: 4,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-HcfRUFeQtlVMptwCwLaqag_YDdEHK9XWw&s",
         city: "dubai",
         BuildingName: "Map View",
         type:"Townhouse",
@@ -41,7 +41,7 @@ export const cardCarousel = [
     },
     {
         id: 5,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://thumbs.dreamstime.com/b/modern-residential-building-beautiful-recreation-area-modern-residential-building-recreation-area-131403554.jpg",
         city: "dubai",
         BuildingName: "Map View",
         type:"Townhouse",
@@ -51,7 +51,7 @@ export const cardCarousel = [
     },
     {
         id: 6,
-        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QXXScrq4ImcfIuZPcXBLLA8a-CAL5lbTCQ&s",
         city: "dubai",
         BuildingName: "Map View",
         type:"Townhouse",
