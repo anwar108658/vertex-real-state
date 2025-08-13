@@ -28,5 +28,36 @@ export const cardCarousel = [
         location: "Chicago, IL",
         launchPrice: "$900,000",
         Handover:"Q3 2025",
-    }
+    },
+    {
+        id: 4,
+        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        city: "dubai",
+        BuildingName: "Map View",
+        type:"Townhouse",
+        location: "Chicago, IL",
+        launchPrice: "$900,000",
+        Handover:"Q3 2025",
+    },
+    {
+        id: 5,
+        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        city: "dubai",
+        BuildingName: "Map View",
+        type:"Townhouse",
+        location: "Chicago, IL",
+        launchPrice: "$900,000",
+        Handover:"Q3 2025",
+    },
+    {
+        id: 6,
+        img: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        city: "dubai",
+        BuildingName: "Map View",
+        type:"Townhouse",
+        location: "Chicago, IL",
+        launchPrice: "$900,000",
+        Handover:"Q3 2025",
+    },
+
 ]
