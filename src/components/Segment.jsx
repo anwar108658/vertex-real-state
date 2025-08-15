@@ -21,7 +21,7 @@ const Segment = ({values,options,size}) => {
   return (
     <div className='inline-flex bg-white flex-wrap justify-center items-center gap-2 border-1 border-gray-300 p-1 rounded-lg '>
       {options && options.map(item => (
-        <button key={item?.key} onClick={() => handleClick(item.key)} className={`${size === "large"?"p-2":"p-1"} flex-1 whitespace-nowrap px-4 cursor-pointer ${selectedVal === item?.key ? 'bg-blue-100 font-semibold rounded text-blue-500' : ''}`}>
+        <button key={item?.key} onClick={() => handleClick(item.key)} className={`${size === "large"?"p-2":"p-1"} flex-1 whitespace-nowrap px-4 cursor-pointer ${selectedVal === item?.key ? 'bg-blue-50 font-semibold rounded text-blue-500' : ''}`}>
           {item?.value}
         </button>
       ))}

@@ -3,9 +3,10 @@ import Segment from './Segment'
 import { Button,  Select } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faCaretDown, faCirclePlay, faHouseSignal, faLocationDot,  } from '@fortawesome/free-solid-svg-icons'
-
+import {useNavigate} from "react-router-dom"
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const data = [{key:"property",value:"Property"},{key:"Newproj",value:"New Project"},{key:"transaction",value:"Transaction"}, {key:"trueEstimate",value:"True Estimate"}, {key:"agent",value:"Agent"}]
   const search1Data = [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}]
   return (
@@ -49,7 +50,7 @@ const HeroSection = () => {
                 ]}
               />
             </div>
-            <button className=' flex-1 bg-blue-500 text-white p-2 px-3 rounded-lg shadow-lg cursor-pointer '>Search</button>
+            <button onClick={() => navigate('/search')} className=' flex-1 bg-blue-500 text-white p-2 px-3 rounded-lg shadow-lg cursor-pointer '>Search</button>
           </div>
           <div className='flex gap-3 px-3'>
             <Button  variant='filled' ghost size='large' color='default' className='flex-1  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Yearly</Button>
