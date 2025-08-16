@@ -1,0 +1,26 @@
+/* Slick Carousel */
+
+.sec-2 .slick-arrow {
+  background-color: #03649c !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all .3s linear !important;
+}
+.sec-2 .slick-arrow:hover {
+  background:  #03649c !important;
+  scale: 1.1 !important;
+}
+.sec-2 .slick-arrow::after {
+    position: static !important;
+}
+
+.sec-2 .slick-track{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px !important;
+}

@@ -61,3 +61,54 @@ export const cardCarousel = [
     },
 
 ]
+
+export const cardData = [
+    {
+        id: 1,
+        price:"5,200,000",
+        bed:"4",
+        bath:"3",
+        type:"Villa",
+        area:"3,000 sqft",
+        location:"Oliva, Victory Heights, Dubai Sports City, Dubai",
+        heading:"Open House this Sunday! 10am - 4pm by appointment",
+        paragraph:"Welcome to this beautifully maintained TH2 in the sought-after Victory Heights community. Ideally located in the heart of Victory Heights, this 4-bedroom home offers the perfect blend of comfort, space, and privacy — ideal for families seeking an active, community-driven lifestyle.",
+        image:[
+            "https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ljff2QGyXvPEGtZPIDH-Gd_BPDMj1crsxA&s",
+            "https://i.pinimg.com/736x/e7/d7/45/e7d745cda4e178e5dcb9bf751eb39bbd.jpg",
+        ]
+    },
+    {
+        id: 2,
+        price:"5,200,000",
+        bed:"4",
+        bath:"3",
+        type:"Villa",
+        area:"3,000 sqft",
+        location:"Oliva, Victory Heights, Dubai Sports City, Dubai",
+        heading:"Open House this Sunday! 10am - 4pm by appointment",
+        paragraph:"Welcome to this beautifully maintained TH2 in the sought-after Victory Heights community. Ideally located in the heart of Victory Heights, this 4-bedroom home offers the perfect blend of comfort, space, and privacy — ideal for families seeking an active, community-driven lifestyle.",
+        image:[
+            "https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ljff2QGyXvPEGtZPIDH-Gd_BPDMj1crsxA&s",
+            "https://i.pinimg.com/736x/e7/d7/45/e7d745cda4e178e5dcb9bf751eb39bbd.jpg",
+        ]
+    },
+    {
+        id: 3,
+        price:"5,200,000",
+        bed:"4",
+        bath:"3",
+        type:"Villa",
+        area:"3,000 sqft",
+        location:"Oliva, Victory Heights, Dubai Sports City, Dubai",
+        heading:"Open House this Sunday! 10am - 4pm by appointment",
+        paragraph:"Welcome to this beautifully maintained TH2 in the sought-after Victory Heights community. Ideally located in the heart of Victory Heights, this 4-bedroom home offers the perfect blend of comfort, space, and privacy — ideal for families seeking an active, community-driven lifestyle.",
+        image:[
+            "https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ljff2QGyXvPEGtZPIDH-Gd_BPDMj1crsxA&s",
+            "https://i.pinimg.com/736x/e7/d7/45/e7d745cda4e178e5dcb9bf751eb39bbd.jpg",
+        ]
+    }
+]

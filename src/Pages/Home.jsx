@@ -10,6 +10,7 @@ import map from "../assets/card/map.svg"
 import Building from "../assets/card/building.svg"
 import Segment from '../components/Segment'
 import {cardCarousel} from "../components/Data"
+import "../style/Home.css"
 
 const Home = () => {
   const CityNames = [{key:"dubai",value:"Dubai"},{key:"abudhabi",value:"Abu Dhabi"},{key:"sharjah",value:"Sharjah"},{key:"ajman",value:"Ajman"},{key:"rasalkhaimah",value:"Ras Al Khaimah"},{key:"ummalquwain",value:"Umm Al Quwain"}]
@@ -55,7 +56,7 @@ const Home = () => {
               ))}
             </div>
         </section>
-        <section className=''>
+        <section className='sec-2'>
           <div className='flex flex-col gap-8 my-10 items-center'>
             <h1 className='text-3xl font-semibold'>Browse New Projects in the UAE</h1>
             <Segment options={CityNames} size="large"/>
