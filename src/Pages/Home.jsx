@@ -11,6 +11,7 @@ import Building from "../assets/card/building.svg"
 import Segment from '../components/Segment'
 import {cardCarousel} from "../components/Data"
 import "../style/Home.css"
+import Footer from '../components/Footer'
 
 const Home = () => {
   const CityNames = [{key:"dubai",value:"Dubai"},{key:"abudhabi",value:"Abu Dhabi"},{key:"sharjah",value:"Sharjah"},{key:"ajman",value:"Ajman"},{key:"rasalkhaimah",value:"Ras Al Khaimah"},{key:"ummalquwain",value:"Umm Al Quwain"}]
@@ -21,10 +22,9 @@ const Home = () => {
   ]
   return (
     <div>
-      <div className='h-screen flex flex-col'>
-        <Header />
-        <HeroSection />
-      </div>
+
+      <HeroSection />
+
       <main className="px-20">
         <section>
           <div className='step-gradient my-15 rounded-2xl flex justify-between items-center p-4 text-white'>
@@ -64,6 +64,7 @@ const Home = () => {
           <Carousel items={cardCarousel} />
         </section>
       </main>
+      
     </div>
   )
 }

@@ -1,10 +1,16 @@
 import { Outlet } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
-    <div className="px-4">
-      <Outlet />
-    </div>
+    <>
+      <div className="px-4">
+        <Header/>
+        <Outlet />
+      </div>
+      <Footer />
+    </>
   )
 }
 

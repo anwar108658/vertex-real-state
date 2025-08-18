@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { Dropdown, Space} from 'antd'
+import { Link } from 'react-router-dom';
 
 const MenuItems = [
     {
@@ -24,10 +25,10 @@ const MenuItems = [
 const Header = () => {
   return (
     <div className='flex justify-between items-center p-4'>
-        <div className='flex items-center'>
+        <Link className='flex items-center' to="/">
             <img src={logo} className='w-15' alt="Logo" />
             <span className='text-2xl font-bold ml-2 text-gradient'>Real Estate</span>
-        </div>
+        </Link>
         <nav>
             <ul className='flex space-x-4 cursor-pointer text-gray-600'>
                 <li className='hover:text-blue-500'>Find my Agent</li>

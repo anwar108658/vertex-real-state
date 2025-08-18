@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBath, faBed, faEnvelope, faLocationDot, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
-const ItemCard = ({item, onClick}) => {
+const ItemCard = ({item}) => {
   return (
-    <div onClick={onClick} className='flex rounded-lg cursor-pointer bg-white border-1 border-gray-200 shadow-md'>
+    <Link to={`/property/${item.id}`} state={{ item }} className='flex rounded-lg cursor-pointer bg-white border-1 border-gray-200 shadow-md'>
         {item.image && (
             <div>
                 <Carousel arrows className='max-w-[300px]'>
@@ -36,7 +37,7 @@ const ItemCard = ({item, onClick}) => {
                 <Button icon={<FontAwesomeIcon size='lg' icon={faWhatsapp} />} />
             </div>
         </div>
-    </div>
+    </Link>
   )
 }
 

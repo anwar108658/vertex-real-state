@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Search from './Pages/Search.jsx'
 import Home from './Pages/Home.jsx'
+import Property from './Pages/Property.jsx'
 
 const route = createBrowserRouter([
   {
@@ -18,7 +19,12 @@ const route = createBrowserRouter([
       {
         path: '/search',
         element: <Search />,
+      },
+      {
+        path: '/property/:id',
+        element: <Property />,
       }
+      
     ]
   },
 ])
