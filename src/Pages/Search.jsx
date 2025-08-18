@@ -15,7 +15,10 @@ const Search = () => {
               ))}
             </div>
         </div>
-        <div className='bg-blue-100 flex-2'>hello2</div>
+        <div className='bg-blue-100 flex-2'>
+          <div className='relative h-[250vh] bg-blue-50'><img src='https://img.pikbest.com/origin/06/18/26/91UpIkbEsTTIr.jpg!bw700' className='h-[70vh] sticky top-0' alt="" /></div>
+          <div className='relative h-[200vh] bg-amber-100'><img src='https://tpc.googlesyndication.com/simgad/12874441518433338950' className='w-full  h-[80vh] sticky top-0' alt="" /></div>
+        </div>
     </div>
   )
 }
