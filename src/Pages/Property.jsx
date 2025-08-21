@@ -66,7 +66,7 @@ const Property = () => {
                 <Image.PreviewGroup
                 items={item.image} // 👈 array of images
                 width={1000}
-                preview={{width: '800', height: '800px',minScale: 0.1,maxScale: 2,bodyStyle: {backgroundColor: 'rgba(0, 0, 0, 0.5)'},className:"scroll-y-hidden",wrapStyle: {overflow: 'hidden'},maskAnimation: {show: true}}}
+                preview={{width: '800', height: '800px',minScale: 0.1,maxScale: 2,className:"scroll-y-hidden bg-linear",wrapStyle: {overflow: 'hidden'},maskAnimation: {show: true}}}
                 >
                 {item.image.map((img, index) => (
                     <Image

@@ -20,4 +20,8 @@
   color: transparent;
 }
 
+/* for image preview on page property >  popup > image preview */
+.bg-linear{
+  background: linear-gradient( rgba(3, 24, 48, 0.774));
+}
 
