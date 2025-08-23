@@ -59,7 +59,7 @@ const Home = () => {
         <section className='sec-2'>
           <div className='flex flex-col gap-8 my-10 items-center'>
             <h1 className='text-3xl font-semibold'>Browse New Projects in the UAE</h1>
-            <Segment options={CityNames} size="large"/>
+            <Segment options={CityNames} size="lg"/>
           </div>
           <Carousel items={cardCarousel} />
         </section>

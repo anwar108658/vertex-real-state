@@ -19,7 +19,7 @@ const HeroSection = () => {
             <h2 className='text-xl font-semibold'>Real Prices. Real Photos. Real Properties.</h2>
         </div>
 
-        <Segment options={data} size="large"/>
+        <Segment options={data} size="lg"/>
 
         <div className='w-full flex flex-col gap-4 bg-white rounded-lg'>
           <div className='flex gap-2  rounded-lg px-3 pt-3'>
