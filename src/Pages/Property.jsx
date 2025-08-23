@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use, useEffect } from 'react'
 import Header from '../components/Header'
 import {Link, useLocation} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,6 +18,10 @@ const Property = () => {
     if (!item) {
         return <div className='h-[61vh] flex items-center justify-center text-gradient text-2xl font-semibold'>Property not found___<Link to="/search" className='font-normal text-blue-900 bg-blue-100 px-3 rounded-lg'>Go back</Link></div>;
     }
+
+    if (popupOpen) {
+        document.body.style.overflow = 'hidden';
+    } else document.body.style.overflow = 'auto';
 
   return (
     <>
