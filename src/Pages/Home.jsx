@@ -10,8 +10,6 @@ import map from "../assets/card/map.svg"
 import Building from "../assets/card/building.svg"
 import Segment from '../components/Segment'
 import {cardCarousel} from "../components/Data"
-import "../style/Home.css"
-import Footer from '../components/Footer'
 
 const Home = () => {
   const CityNames = [{key:"dubai",value:"Dubai"},{key:"abudhabi",value:"Abu Dhabi"},{key:"sharjah",value:"Sharjah"},{key:"ajman",value:"Ajman"},{key:"rasalkhaimah",value:"Ras Al Khaimah"},{key:"ummalquwain",value:"Umm Al Quwain"}]
