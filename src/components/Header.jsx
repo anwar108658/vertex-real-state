@@ -36,6 +36,9 @@ const Header = () => {
     useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 950);
+      if (window.innerWidth >= 950) {
+        setDrawer(false);
+      }
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -73,7 +76,7 @@ const Header = () => {
                     </Dropdown>
                 </ul>
             </nav>:
-                <button onClick={() => setDrawer(true)} className='text-[1.1rem] font-bold ml-2 text-blue-500'>
+                <button onClick={() => setDrawer(true)} className='text-[1.1rem] font-bold ml-2 text-blue-500 cursor-pointer'>
                     <FontAwesomeIcon icon={faBars} size='lg' />
                 </button>
             }
