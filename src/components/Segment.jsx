@@ -1,5 +1,4 @@
-import { Select } from 'antd';
-import React, { use, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Segment = ({values,options=[],size="md",className=""}) => {
   const [selectedVal, setSelectedVal] = useState(options[0]?.key);

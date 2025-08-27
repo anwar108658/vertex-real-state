@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationArrow, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const CustomCarousel = ({items}) => {
