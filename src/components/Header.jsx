@@ -81,7 +81,7 @@ const Header = () => {
                 </button>
             }
         </header>
-        <Drawer open={drawer} onClose={() => setDrawer(false)}>
+        <Drawer open={drawer} placement='bottom' onClose={() => setDrawer(false)}>
             <nav>
                 <ul className='flex flex-col gap-5 cursor-pointer text-[1.1rem] text-gray-600'>
                     <li className='hover:text-blue-500'>Find my Agent</li>
