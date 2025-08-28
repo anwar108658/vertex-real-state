@@ -11,11 +11,11 @@ const HeroSection = () => {
   const search1Data = [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}]
   return (
     <div 
-    className={`bg-custom-hero flex justify-center items-center  flex-1 rounded-lg`}>
-      <div className='max-w-[800px] h-screen w-full flex flex-col items-center justify-center gap-6'>
+    className={`bg-custom-hero flex justify-center items-center  flex-1 rounded-lg px-2`}>
+      <div className='max-w-[800px] h-screen w-full flex flex-col items-center justify-center gap-3 sm:gap-6'>
 
         <div className='text-white backdrop-blur-sm '>
-            <h1 className='text-4xl font-bold'>Real homes live here</h1>
+            <h1 className='text-2xl font-bold'>Real homes live here</h1>
             <h2 className='text-xl font-semibold'>Real Prices. Real Photos. Real Properties.</h2>
         </div>
 
@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <button className="mt-6 flex items-center gap-2 border-1 border-white text-white bg-transparent px-4 py-2 rounded-lg cursor-pointer">
+        <button className="mt-2 :sm:mt-6 flex items-center gap-2 border-1 border-white text-white bg-transparent px-4 py-2 rounded-lg cursor-pointer">
           <FontAwesomeIcon icon={faCirclePlay}  size="lg" />
           <span>Experience the journey</span>
         </button>
