@@ -20,7 +20,7 @@ const Segment = ({values,options=[],size="md",className=""}) => {
   return (
     <div className={`${className} inline-flex  bg-white flex-wrap justify-center items-center gap-2 border-1 border-gray-300 p-1 rounded-lg`}>
       {options && options.map(item => (
-        <button key={item?.key} onClick={() => handleClick(item.key)} className={`${size === "lg" ? "p-2" : size === "md" ? "p-1" : size === "sm" ? "p-0 " : ""} ${selectedVal === item?.key ? 'bg-blue-50 font-semibold rounded text-blue-500' : ''} min-w-[114px] flex-1 whitespace-nowrap px-4 cursor-pointer flex gap-2 items-center justify-center`}>
+        <button key={item?.key} onClick={() => handleClick(item.key)} className={`${size === "lg" ? "sm:p-2" : size === "md" ? "p-1" : size === "sm" ? "p-0 " : ""} ${selectedVal === item?.key ? 'bg-blue-50 font-semibold rounded text-blue-500' : ''} py-1 min-w-[114px] flex-1 whitespace-nowrap px-4 cursor-pointer flex gap-2 items-center justify-center`}>
           {item?.icon}
           {item?.value}
         </button>

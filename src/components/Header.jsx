@@ -71,7 +71,7 @@ const Header = () => {
                     <Dropdown menu={{ items: MenuItems}} trigger={['click']}>
                         <Space className='flex items-center hover:text-[#05bef7] cursor-pointer'>
                             Events
-                            <span className=' text-[.6rem]'>▼</span>
+                            <span className='text-[.6rem]'>▼</span>
                         </Space>
                     </Dropdown>
                 </ul>

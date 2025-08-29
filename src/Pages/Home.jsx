@@ -23,10 +23,10 @@ const Home = () => {
 
       <HeroSection />
 
-      <main className="px-20">
+      <main className="xl:px-20">
         <section>
-          <div className='step-gradient my-15 rounded-2xl flex justify-between items-center p-4 text-white'>
-            <div className='flex items-center gap-5'>
+          <div className='step-gradient flex-col sm:flex-row gap-3 my-10 lg:my-15 rounded-2xl flex justify-between items-center p-4 text-white'>
+            <div className='flex flex-col sm:flex-row items-center gap-5'>
               <Avatar.Group>
                 <Avatar size="large" src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />
                 <Avatar size="large" style={{ backgroundColor: '#f56a00' }}>K</Avatar>
@@ -40,14 +40,14 @@ const Home = () => {
                 <p>Find trusted agents awarded for their excellent performance</p>
               </div>
             </div>
-            <button className=' bg-white text-blue-500 font-semibold p-2 px-3 rounded-lg shadow-lg cursor-pointer flex items-center gap-2 hover:gap-3.5 transition-all duration-300'>
+            <button className=' bg-white text-blue-500 font-semibold p-2 px-3 rounded-lg shadow-lg cursor-pointer whitespace-nowrap flex items-center gap-2 hover:gap-3.5 transition-all duration-300'>
               <span>Find My Agent</span>
               <FontAwesomeIcon icon={faAngleRight} />
             </button>
           </div>
-            <div className='grid grid-cols-3 gap-4 pb-10 border-b-1 border-gray-300'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-10 border-b-1 border-gray-300'>
               {cards.map((card, index) => (
-                <div key={index} style={{ backgroundImage: `url(${card.img})`, backgroundSize: "70% 100%" }} className={`h-[300px] bg-right bg-no-repeat bg-blue-100 p-5 rounded-lg shadow-lg flex flex-col  gap-3 `}>
+                <div key={index} style={{ backgroundImage: `url(${card.img})`, backgroundSize: "70% 100%" }} className={`h-[170px] sm:h-[250px] md:h-[300px] bg-right bg-no-repeat bg-blue-100  text-shadow-[0_2px_4px_rgba(0,0,0,0.5)] p-5 rounded-lg shadow-lg flex flex-col  gap-3 `}>
                   <h3 className='text-2xl font-semibold text-gray-800'>{card.heading}</h3>
                   <p className='max-w-[200px] text-[1.1rem]'>{card.paragraph}</p>
                 </div>
