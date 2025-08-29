@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-[length:30px_30px] px-5 bg-[url("https://static.bayut.com/assets/iconFooterBackground_noinline.f1ca6d821e6f9e0dea6dfe4e3f81d9f3.svg")] py-10 text-white mt-10'>
+    <footer className='bg-[length:30px_30px] px-1 sm:px-5 bg-[url("https://static.bayut.com/assets/iconFooterBackground_noinline.f1ca6d821e6f9e0dea6dfe4e3f81d9f3.svg")] py-10 text-white mt-10'>
         <div className='max-w-[1200px] mx-auto flex justify-between items-center'>
           <div className='flex items-center'>
             <img src={logo} className='w-15' alt="Logo" />

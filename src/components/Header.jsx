@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <>
-        <header className='flex justify-between items-center py-4'>
+        <header className='flex justify-between items-center py-4 xl:px-20'>
             <Link className='flex items-center' to="/">
                 <img src={logo} className='w-12 sm:w-15' alt="Logo" />
                 <span className='text-2xl font-bold ml-2 text-gradient'>Real Estate</span>

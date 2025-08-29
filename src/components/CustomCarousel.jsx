@@ -27,15 +27,21 @@ const CustomCarousel = ({items}) => {
   
       responsive={[
         {
-          breakpoint: 768,
+          breakpoint: 500,
           settings: {
             slidesToShow: 1,
           },
         },
         {
-          breakpoint: 1024,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3,
           },
         },
       ]}
