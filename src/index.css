@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+body{
+  font-family: "Poppins", sans-serif;
+}
 
 .bg-custom-hero {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)) ,url(./assets/heroImage.jpg);
