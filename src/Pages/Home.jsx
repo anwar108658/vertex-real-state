@@ -47,7 +47,7 @@ const Home = () => {
           </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-10 border-b-1 border-gray-300'>
               {cards.map((card, index) => (
-                <div key={index} style={{ backgroundImage: `url(${card.img})`, backgroundSize: "70% 100%" }} className={`h-[170px] sm:h-[250px] md:h-[300px] bg-right bg-no-repeat bg-blue-100  text-shadow-[0_2px_4px_rgba(0,0,0,0.5)] p-5 rounded-lg shadow-lg flex flex-col  gap-3 `}>
+                <div key={index} style={{ backgroundImage: `url(${card.img})`, backgroundSize: "70% 100%" }} className={`h-[170px] sm:h-[250px] md:h-[300px] bg-right bg-no-repeat bg-blue-100  text-shadow-[0_2px_4px_rgba(0,0,0,0.5)] text-gray-600 p-5 rounded-lg shadow-lg flex flex-col  gap-3 `}>
                   <h3 className='text-2xl font-semibold text-gray-800'>{card.heading}</h3>
                   <p className='max-w-[200px] text-[1.1rem]'>{card.paragraph}</p>
                 </div>

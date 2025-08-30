@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-const CustomCarousel = ({items}) => {
+const CustomCarousel = ({items=[]}) => {
   const contentStyle = {
   margin: 0,
   height: '160px',
