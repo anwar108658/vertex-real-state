@@ -7,9 +7,10 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 
 const ItemCard = ({item}) => {
-    const [width,setWidth] = React.useState(350);
+    const [width,setWidth] = React.useState(0);
     React.useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth <= 640 ? window.innerWidth : 350);
+        setWidth(window.innerWidth <= 640 ? window.innerWidth : 350);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
