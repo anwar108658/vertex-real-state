@@ -25,9 +25,9 @@ const Property = () => {
 
   return (
     <>
-        <div className='max-w-[1200px] mx-auto !overflow-hidden scrollbar-hide'>
-            <div className='h-[80vh] flex gap-3'>
-                <div className='flex-5'><img className='w-full h-full object-cover hover:brightness-90 cursor-pointer rounded-lg' onClick={() => setPopupOpen(true)} src={item?.image[0]} alt="im" /></div>
+        <div className=' py-4 xl:px-20 !overflow-hidden scrollbar-hide'>
+            <div className='max-w-[1200px] h-[80vh] flex gap-3'>
+                <div className='flex-3 sm:flex-4 md:flex-5'><img className='w-full h-full object-cover hover:brightness-90 cursor-pointer rounded-lg' onClick={() => setPopupOpen(true)} src={item?.image[0]} alt="im" /></div>
                 <div className='flex-2 grid grid-rows-2 gap-3'>
                     <div><img className='w-full h-full object-cover hover:brightness-90 cursor-pointer rounded-lg' onClick={() => setPopupOpen(true)} src={item?.image[1]} alt="" /></div>
                     <div className='  grid  grid-rows-2 gap-3'>
@@ -56,7 +56,7 @@ const Property = () => {
                     <h1 className='text-[1.2rem] font-semibold'>{item?.heading}</h1>
                     <p className='text-gray-800 text-[1rem] mt-2'>{item?.paragraph}</p>
                 </div>
-                <div className='flex-2 min-w-[300px] bg-blue-100'></div>
+                <div className='hidden lg:block flex-2 min-w-[300px] bg-blue-100'></div>
             </div>
         </div>
 

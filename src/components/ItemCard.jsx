@@ -17,7 +17,7 @@ const ItemCard = ({item}) => {
   return (
     <Link to={`/property/${item.id}`} state={{ item }} className='flex flex-col sm:flex-row rounded-lg  cursor-pointer bg-white border-1 border-gray-200 shadow-md'>
         {item.image && (
-            <Carousel arrows  style={{ width: `${width-50}px` }}>
+            <Carousel arrows  style={{ width: `${width-45}px` }}>
                 {item.image.map((img, index) => (
                     <img src={img} key={index} className='h-[260px] brightness-75 rounded-lg rounded-bl-lg rounded-tl-lg' alt={`Property ${index + 1}`} />
                 ))}
