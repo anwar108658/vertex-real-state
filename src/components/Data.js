@@ -312,3 +312,14 @@ export const cardData = [
         ]
     }
 ]
+
+export const multiSearch = {
+    tabs: [{key:"property",value:"Property"},{key:"Newproj",value:"New Project"},{key:"transaction",value:"Transaction"}, {key:"agent",value:"Agent"}],
+    property: {
+        location: "",
+        priceRange: [0, 10000000],
+        bedrooms: 0,
+        bathrooms: 0,
+        propertyType: ""
+    },
+}
