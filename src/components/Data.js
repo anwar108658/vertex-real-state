@@ -313,13 +313,42 @@ export const cardData = [
     }
 ]
 
-export const multiSearch = {
-    tabs: [{key:"property",value:"Property"},{key:"Newproj",value:"New Project"},{key:"transaction",value:"Transaction"}, {key:"agent",value:"Agent"}],
-    property: {
-        location: "",
-        priceRange: [0, 10000000],
-        bedrooms: 0,
-        bathrooms: 0,
-        propertyType: ""
-    },
-}
+export const multiSearch = [
+    {
+        id:1,
+        key:"property",
+        value:"Property",
+        option: [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}],
+        option2: [{key:"all",value:"All"},{key:"ready",value:"Ready"},{key:"offPlan",value:"Off-Plan"}],
+        individualDropdown: [{key:"yearly",value:"Yearly"},{key:"monthly",value:"Monthly"},{key:"weekly",value:"Weekly"},{key:"daily",value:"Daily"},{key:"any",value:"Any"}],
+        dropdown1:{
+            id:1,
+            key:"residential",
+            value:"Residential",
+            dropOption: [
+                {key:"residential",value:"Residential",option:["Apartment","Villa","Townhouse","Penthouse","Hotel Apartment","Residential Plot"]},
+                {key:"commercial",value:"Commercial",option:["Office","Retail","Warehouse","Commercial Plot"]}
+            ],
+            dropOption2:["Q3 2025","Q4 2025","Q1 2026","Q2 2026","Q3 2026","Q4 2026","2025","2026","2027","2028","2029","2030"]
+        },
+        dropdown2:{
+            id:2,
+            key:"beds&baths",
+            value:"Beds & Baths",
+            dropOption: [
+                {key:"bed",value:"Bed",option:["Studio","1","2","3","4","5","6","7","8+"]},
+                {key:"bath",value:"Bath",option:["1","2","3","4","5","6+",]},
+            ]
+        },
+        dropdown3:{
+            id:3,
+            key:"price",
+            value:"Price",
+            dropOption: [
+                {key:"low",value:"Low",option:["0","100,000","200,000","300,000","400,000","500,000","600,000","700,000","800,000","900,000","1,000,000"]},
+                {key:"high",value:"High",option:["1,000,000","1,100,000","1,200,000","1,300,000","1,400,000","1,500,000","1,600,000","1,700,000","1,800,000","1,900,000","2,000,000"]},
+            ]
+        }
+        
+    }
+]
