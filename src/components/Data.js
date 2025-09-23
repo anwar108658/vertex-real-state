@@ -318,7 +318,7 @@ export const multiSearch = [
         id:1,
         key:"property",
         value:"Property",
-        option: [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}],
+        option: [{key:"buy",value:"Buy"},{key:"rent",value:"Rent"}],
         option2: [{key:"all",value:"All"},{key:"ready",value:"Ready"},{key:"offPlan",value:"Off-Plan"}],
         individualDropdown: [{key:"yearly",value:"Yearly"},{key:"monthly",value:"Monthly"},{key:"weekly",value:"Weekly"},{key:"daily",value:"Daily"},{key:"any",value:"Any"}],
         dropdown1:{
@@ -358,8 +358,8 @@ export const multiSearch = [
         id:2,
         key:"newProjects",
         value:"New Projects",
-        option: [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}],
-        option2: [{key:"all",value:"All"},{key:"ready",value:"Ready"},{key:"offPlan",value:"Off-Plan"}],
+        // option: [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}],
+        // option2: [{key:"all",value:"All"},{key:"ready",value:"Ready"},{key:"offPlan",value:"Off-Plan"}],
         individualDropdown: [{key:"yearly",value:"Yearly"},{key:"monthly",value:"Monthly"},{key:"weekly",value:"Weekly"},{key:"daily",value:"Daily"},{key:"any",value:"Any"}],
         dropdown1:{
             id:1,
@@ -398,7 +398,7 @@ export const multiSearch = [
         id:3,
         key:"transactions",
         value:"Transactions",
-        option: [{key:"rent",value:"Rent"}, {key:"buy",value:"Buy"}],
+        option: [{key:"buy",value:"Sold"},{key:"rent",value:"Rented"}],
         option2: [{key:"all",value:"All"},{key:"ready",value:"Ready"},{key:"offPlan",value:"Off-Plan"}],
         individualDropdown: [{key:"yearly",value:"Yearly"},{key:"monthly",value:"Monthly"},{key:"weekly",value:"Weekly"},{key:"daily",value:"Daily"},{key:"any",value:"Any"}],
         dropdown1:{
@@ -434,4 +434,9 @@ export const multiSearch = [
         }
         
     },
+    {
+        id:4,
+        key:"agents",
+        value:"Agents",
+    }
 ]
