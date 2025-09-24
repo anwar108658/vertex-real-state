@@ -19,6 +19,7 @@ const CustomSearch = () => {
     <div className='w-full flex flex-col gap-4 bg-white rounded-lg'>
           {multiSearch.length > 0 && multiSearch.map((item) => {
             if(item.key === selected) {
+                
               return (
                 <>
                   <div className='flex flex-col sm:flex-row gap-2  rounded-lg px-3 pt-3'>
@@ -52,12 +53,12 @@ const CustomSearch = () => {
                     </div>
                     <button onClick={() => navigate('/search')} className=' flex-1 bg-blue-500 text-white p-2 px-3 rounded-lg shadow-lg cursor-pointer '>Search</button>
                   </div>
-                  <div className='flex flex-wrap gap-3 px-3'>
+                  <div className=' gap-3 px-3 grid  grid-cols-[repeat(auto-fill,minmax(180px,1fr))]'>
                     {searchData.option !== "rent" ? <Segment options={item?.option2} size='xs' className='flex-1'/>:
-                    <Button  variant='filled' size='large' color='default' className='flex-1  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Yearly</Button>}
-                    <Button  variant='filled' size='large' color='default' className='flex-1  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Residential</Button>
-                    <Button  variant='filled'  size='large' color='default' className='flex-1  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Beds & Baths</Button>
-                    <Button  variant='filled'  size='large' color='default' className='flex-1  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Price (AED)</Button>
+                    <Button  variant='filled' size='large' color='default' className=' !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Yearly</Button>}
+                    <Button  variant='filled' size='large' color='default' className=' !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Residential</Button>
+                    <Button  variant='filled'  size='large' color='default' className='  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Beds & Baths</Button>
+                    <Button  variant='filled'  size='large' color='default' className=' !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Price (AED)</Button>
                   </div>
                 </>
               )
