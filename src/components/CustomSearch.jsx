@@ -54,7 +54,7 @@ const CustomSearch = () => {
                     <button onClick={() => navigate('/search')} className=' flex-1 bg-blue-500 text-white p-2 px-3 rounded-lg shadow-lg cursor-pointer '>Search</button>
                   </div>
                   <div className=' gap-3 px-3 grid  grid-cols-[repeat(auto-fill,minmax(180px,1fr))]'>
-                    {searchData.option !== "rent" ? <Segment options={item?.option2} size='xs' className='flex-1'/>:
+                    {searchData.option == "buy"? <Segment options={item?.option2} size='xs' className='flex-1'/>:
                     <Button  variant='filled' size='large' color='default' className=' !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Yearly</Button>}
                     <Button  variant='filled' size='large' color='default' className=' !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Residential</Button>
                     <Button  variant='filled'  size='large' color='default' className='  !justify-between !bg-white !text-gray-900 !border-gray-300 border-2' icon={<FontAwesomeIcon className='!text-gray-500' icon={faCaretDown} />} iconPosition='end'>Beds & Baths</Button>
