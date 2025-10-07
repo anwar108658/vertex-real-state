@@ -5,7 +5,7 @@ import CustomSearch from './CustomSearch'
 const HeroSection = () => {
   return (
     <div 
-    className={`bg-custom-hero flex justify-center items-center  flex-1 rounded-lg px-2`}>
+      className={`bg-custom-hero flex justify-center items-center  flex-1 rounded-lg px-2`}>
       <div className='max-w-[850px] h-[120vh] sm:h-screen w-full flex flex-col items-center justify-center gap-4 sm:gap-6'>
 
         <div className='text-white backdrop-blur-sm '>
